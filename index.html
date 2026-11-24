@@ -2,383 +2,590 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#101d2b">
-    <meta name="description" content="Um estudo sobre trabalho, desigualdade social, custo de vida e educação financeira.">
-    <title>Por que é tão difícil ganhar dinheiro? | Educação Financeira</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101d2b">
+
+  <meta name="description" content="Um estudo sobre trabalho, desigualdade social, educação financeira e as dificuldades de conseguir dinheiro.">
+
+  <title>Educação Financeira | Por que é tão difícil ganhar dinheiro?</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
 
-    <header class="header">
-        <nav class="navbar">
-            <a href="#inicio" class="logo">Educa<span>Financeira</span></a>
+  <!-- CABEÇALHO -->
+  <header class="header">
+    <div class="container navbar">
 
-            <button class="menu-toggle" id="menuToggle"
-                aria-label="Abrir menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+      <a href="#inicio" class="logo">
+        Educa<span>Financeira</span>
+      </a>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#introducao">Introdução</a></li>
-                <li><a href="#conteudo">Conteúdo</a></li>
-                <li><a href="#equipe">Equipe</a></li>
-                <li><a href="#fontes">Fontes</a></li>
-            </ul>
-        </nav>
-    </header>
+      <button
+        class="menu-button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        type="button">
+        ☰
+      </button>
 
-    <main>
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <span class="eyebrow">PROJETO DE EDUCAÇÃO FINANCEIRA</span>
-                <h1>Por que é tão difícil <span>ganhar dinheiro?</span></h1>
-                <p>
-                    Uma reflexão sobre trabalho, oportunidades,
-                    desigualdade social e educação financeira.
-                </p>
-                <a href="#introducao" class="btn">Explorar o conteúdo</a>
-            </div>
-            <div class="hero-decoration"></div>
-        </section>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#introducao">Introdução</a></li>
+          <li><a href="#conteudo">Conteúdo</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#fontes">Fontes</a></li>
+        </ul>
+      </nav>
 
-        <section id="equipe" class="section reveal">
-            <div class="section-heading">
-                <span class="eyebrow">QUEM SOMOS</span>
-                <h2>Nossa equipe</h2>
-                <p>Conheça os integrantes responsáveis pelo desenvolvimento deste trabalho.</p>
-            </div>
+    </div>
+  </header>
 
-            <div class="team-grid">
-                <div class="team-card">Hector</div>
-                <div class="team-card">Estêvão</div>
-                <div class="team-card">Carlos</div>
-                <div class="team-card">Nicolas</div>
-                <div class="team-card">Brayan</div>
-                <div class="team-card">João Vitor</div>
-                <div class="team-card">Ryan</div>
-            </div>
-        </section>
+  <main>
 
-        <section id="introducao" class="section reveal">
-            <div class="section-heading">
-                <span class="eyebrow">APRESENTAÇÃO</span>
-                <h2>Introdução</h2>
-            </div>
+    <!-- CAPA -->
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
 
-            <div class="content-card">
-                <p>
-                    Ganhar dinheiro é uma necessidade para a maioria das pessoas,
-                    pois é por meio dele que conseguimos atender às nossas
-                    necessidades, como alimentação, moradia, saúde, transporte
-                    e educação. Apesar disso, conquistar uma renda suficiente
-                    pode ser um grande desafio.
-                </p>
+        <p class="eyebrow">EDUCAÇÃO FINANCEIRA</p>
 
-                <p>
-                    A dificuldade não está apenas em conseguir um emprego.
-                    Os baixos salários, o desemprego, o custo de vida e a
-                    desigualdade social também influenciam a situação financeira
-                    das pessoas e das famílias.
-                </p>
+        <h1>
+          Por que é tão difícil
+          <span>ganhar dinheiro?</span>
+        </h1>
 
-                <p>
-                    Neste trabalho, vamos analisar esses fatores e compreender
-                    como a educação financeira pode contribuir para uma relação
-                    mais consciente com o dinheiro.
-                </p>
-            </div>
-        </section>
+        <p class="hero-description">
+          Uma reflexão sobre trabalho, oportunidades,
+          desigualdade social e os desafios de conquistar
+          uma vida financeira mais estável.
+        </p>
 
-        <section id="conteudo" class="section reveal">
-            <div class="section-heading">
-                <span class="eyebrow">SUMÁRIO</span>
-                <h2>O que vamos estudar?</h2>
-                <p>Selecione um dos temas para acessar sua explicação.</p>
-            </div>
+        <p class="hero-author">
+          Projeto desenvolvido por
+          <strong>Hector e equipe</strong>
+        </p>
 
-            <div class="topics-grid">
-                <a href="#tema1" class="topic-card">
-                    <span class="topic-number">01</span>
-                    <h3>A importância do dinheiro na sociedade</h3>
-                    <span class="topic-link">Ler tema →</span>
-                </a>
+        <a href="#introducao" class="button">
+          Conheça o projeto →
+        </a>
 
-                <a href="#tema2" class="topic-card">
-                    <span class="topic-number">02</span>
-                    <h3>A dificuldade de conseguir um emprego</h3>
-                    <span class="topic-link">Ler tema →</span>
-                </a>
+      </div>
+    </section>
 
-                <a href="#tema3" class="topic-card">
-                    <span class="topic-number">03</span>
-                    <h3>O esforço, o tempo e a desvalorização do trabalho</h3>
-                    <span class="topic-link">Ler tema →</span>
-                </a>
+    <!-- INTRODUÇÃO -->
+    <section class="section" id="introducao">
+      <div class="container">
 
-                <a href="#tema4" class="topic-card">
-                    <span class="topic-number">04</span>
-                    <h3>O alto custo de vida e as dificuldades financeiras</h3>
-                    <span class="topic-link">Ler tema →</span>
-                </a>
+        <div class="section-heading reveal">
+          <span class="section-label">INTRODUÇÃO</span>
 
-                <a href="#tema5" class="topic-card">
-                    <span class="topic-number">05</span>
-                    <h3>A desigualdade social e a diferença de oportunidades</h3>
-                    <span class="topic-link">Ler tema →</span>
-                </a>
+          <h2>Entender o dinheiro é entender a sociedade.</h2>
 
-                <a href="#tema6" class="topic-card">
-                    <span class="topic-number">06</span>
-                    <h3>Educação financeira, dívidas e planejamento do dinheiro</h3>
-                    <span class="topic-link">Ler tema →</span>
-                </a>
-            </div>
-        </section>
+          <p>
+            O dinheiro está presente em praticamente todas as
+            atividades do nosso cotidiano. Precisamos dele para
+            comprar alimentos, pagar moradia, estudar, trabalhar
+            e garantir nossas necessidades básicas.
+          </p>
+        </div>
 
-        <section id="tema1" class="section theme-section reveal">
-            <span class="eyebrow">TEMA 01</span>
-            <h2>A importância do dinheiro na sociedade</h2>
+        <div class="theme-section reveal">
+          <h3>Por que esse assunto é importante?</h3>
 
-            <div class="content-card">
-                <p>
-                    O dinheiro possui um papel fundamental na sociedade,
-                    pois é utilizado para comprar produtos, contratar serviços
-                    e atender às necessidades das pessoas. Por meio dele,
-                    conseguimos ter acesso à alimentação, moradia, transporte,
-                    saúde e educação.
-                </p>
+          <p>
+            Apesar de sua importância, conseguir dinheiro não é
+            uma tarefa simples para muitas pessoas. A falta de
+            oportunidades, o desemprego, os baixos salários e
+            o aumento do custo de vida tornam essa realidade
+            ainda mais difícil.
+          </p>
 
-                <p>
-                    Entretanto, o dinheiro não representa apenas o poder de
-                    compra. Ele também está relacionado à segurança financeira
-                    e às oportunidades que uma pessoa pode ter ao longo da vida.
-                    Ter uma renda permite organizar as despesas e planejar
-                    objetivos para o futuro.
-                </p>
+          <p>
+            Neste trabalho, vamos analisar alguns dos principais
+            fatores que dificultam a conquista de uma vida
+            financeira estável e entender como a educação
+            financeira pode ajudar nas decisões do dia a dia.
+          </p>
+        </div>
 
-                <p>
-                    Por isso, ganhar dinheiro é importante, mas também é
-                    necessário compreender como ele funciona e como pode
-                    ser administrado. A dificuldade aparece quando a renda
-                    não acompanha as necessidades e os custos da vida.
-                </p>
-            </div>
-        </section>
+      </div>
+    </section>
 
-        <section id="tema2" class="section theme-section reveal">
-            <span class="eyebrow">TEMA 02</span>
-            <h2>A dificuldade de conseguir um emprego</h2>
+    <!-- EQUIPE -->
+    <section class="section team" id="equipe">
+      <div class="container">
 
-            <div class="content-card">
-                <p>
-                    Conseguir um emprego pode ser um desafio para muitas pessoas.
-                    O mercado de trabalho apresenta concorrência e, em diversas
-                    vagas, as empresas exigem experiência profissional,
-                    formação ou conhecimentos específicos.
-                </p>
+        <div class="section-heading reveal">
+          <span class="section-label">NOSSA EQUIPE</span>
 
-                <p>
-                    Para quem está começando a vida profissional, essa situação
-                    pode ser ainda mais difícil. Muitas pessoas precisam de uma
-                    oportunidade para adquirir experiência, mas encontram
-                    dificuldades justamente porque ainda não trabalharam
-                    anteriormente.
-                </p>
+          <h2>Quem desenvolveu este projeto?</h2>
 
-                <p>
-                    A falta de oportunidades de emprego prejudica a renda
-                    individual e familiar. Por isso, o acesso à educação,
-                    à qualificação profissional e a oportunidades de trabalho
-                    é importante para melhorar as condições de vida.
-                </p>
-            </div>
-        </section>
+          <p>
+            Trabalho realizado em equipe para estudar e
+            compreender os desafios financeiros da sociedade.
+          </p>
+        </div>
 
-        <section id="tema3" class="section theme-section reveal">
-            <span class="eyebrow">TEMA 03</span>
-            <h2>O esforço, o tempo e a desvalorização do trabalho</h2>
+        <div class="team-grid">
 
-            <div class="content-card">
-                <p>
-                    Trabalhar exige dedicação, responsabilidade e tempo.
-                    Muitas pessoas passam grande parte do dia exercendo
-                    suas atividades profissionais para conseguir sustentar
-                    a si mesmas e suas famílias.
-                </p>
+          <div class="team-member reveal">
+            <h3>Hector</h3>
+            <p>Integrante</p>
+          </div>
 
-                <p>
-                    Mesmo com todo esse esforço, nem sempre a remuneração
-                    recebida corresponde às responsabilidades e às dificuldades
-                    enfrentadas no trabalho. Existem profissionais que recebem
-                    salários baixos, mesmo realizando atividades essenciais
-                    para o funcionamento da sociedade.
-                </p>
+          <div class="team-member reveal">
+            <h3>Estêvão</h3>
+            <p>Integrante</p>
+          </div>
 
-                <p>
-                    A valorização do trabalho é importante porque o esforço
-                    de cada profissional contribui para a economia e para
-                    a vida coletiva. Uma remuneração justa e condições
-                    adequadas de trabalho ajudam a garantir mais dignidade
-                    e qualidade de vida.
-                </p>
-            </div>
-        </section>
+          <div class="team-member reveal">
+            <h3>Carlos</h3>
+            <p>Integrante</p>
+          </div>
 
-        <section id="tema4" class="section theme-section reveal">
-            <span class="eyebrow">TEMA 04</span>
-            <h2>O alto custo de vida e as dificuldades financeiras</h2>
+          <div class="team-member reveal">
+            <h3>Nicolas</h3>
+            <p>Integrante</p>
+          </div>
 
-            <div class="content-card">
-                <p>
-                    O custo de vida corresponde ao dinheiro necessário para
-                    manter as necessidades do dia a dia. Entre as principais
-                    despesas estão alimentação, moradia, água, energia elétrica,
-                    transporte, saúde e educação.
-                </p>
+          <div class="team-member reveal">
+            <h3>Brayan</h3>
+            <p>Integrante</p>
+          </div>
 
-                <p>
-                    Quando os preços dos produtos e serviços aumentam,
-                    as famílias precisam gastar mais para manter o mesmo
-                    padrão de consumo. Se os salários não acompanham
-                    esse aumento, o orçamento fica mais apertado e sobra
-                    menos dinheiro para outras necessidades.
-                </p>
+          <div class="team-member reveal">
+            <h3>João Vitor</h3>
+            <p>Integrante</p>
+          </div>
 
-                <p>
-                    Essa situação pode dificultar a economia de dinheiro,
-                    aumentar o endividamento e comprometer o planejamento
-                    financeiro. Por isso, compreender os gastos e organizar
-                    o orçamento é importante para enfrentar as dificuldades
-                    financeiras.
-                </p>
-            </div>
-        </section>
+          <div class="team-member reveal">
+            <h3>Ryan</h3>
+            <p>Integrante</p>
+          </div>
 
-        <section id="tema5" class="section theme-section reveal">
-            <span class="eyebrow">TEMA 05</span>
-            <h2>A desigualdade social e a diferença de oportunidades</h2>
+        </div>
+      </div>
+    </section>
 
-            <div class="content-card">
-                <p>
-                    A desigualdade social acontece quando as pessoas possuem
-                    condições muito diferentes de acesso à renda, educação,
-                    saúde, moradia e oportunidades. Enquanto algumas famílias
-                    conseguem ter mais estabilidade financeira, outras enfrentam
-                    dificuldades para atender até mesmo às necessidades básicas.
-                </p>
+    <!-- VISÃO GERAL DOS TEMAS -->
+    <section class="section" id="conteudo">
+      <div class="container">
 
-                <p>
-                    Essas diferenças também influenciam o acesso ao mercado
-                    de trabalho. Pessoas que não possuem as mesmas condições
-                    de estudo, formação e recursos podem encontrar mais
-                    obstáculos para conseguir empregos e melhorar sua renda.
-                </p>
+        <div class="section-heading reveal">
+          <span class="section-label">CONTEÚDO</span>
 
-                <p>
-                    Combater a desigualdade exige ampliar o acesso à educação,
-                    à qualificação profissional e a oportunidades dignas.
-                    Dessa forma, mais pessoas podem ter condições de construir
-                    uma vida melhor e participar do desenvolvimento da sociedade.
-                </p>
-            </div>
-        </section>
+          <h2>Os principais desafios financeiros</h2>
 
-        <section id="tema6" class="section theme-section reveal">
-            <span class="eyebrow">TEMA 06</span>
-            <h2>Educação financeira, dívidas e planejamento do dinheiro</h2>
+          <p>
+            Seis temas que ajudam a explicar por que conquistar
+            e administrar dinheiro pode ser tão difícil.
+          </p>
+        </div>
 
-            <div class="content-card">
-                <p>
-                    A educação financeira é o conhecimento que ajuda as pessoas
-                    a administrar melhor o próprio dinheiro. Ela envolve
-                    compreender receitas, despesas, planejamento, consumo
-                    consciente e formas de evitar problemas financeiros.
-                </p>
+        <div class="topics-grid">
 
-                <p>
-                    Quando uma pessoa não controla seus gastos, pode acabar
-                    acumulando dívidas e comprometendo uma parte significativa
-                    da renda com juros e pagamentos. Por isso, acompanhar
-                    as despesas, comparar preços e evitar compras desnecessárias
-                    são atitudes importantes.
-                </p>
+          <article class="topic-card reveal">
+            <span class="topic-number">01</span>
+            <h3>A importância do dinheiro na sociedade</h3>
+            <p>
+              Como o dinheiro influencia nossas necessidades,
+              escolhas e qualidade de vida.
+            </p>
+            <a href="#tema1" class="topic-link">Ler tema →</a>
+          </article>
 
-                <p>
-                    O planejamento financeiro também permite estabelecer
-                    objetivos, criar uma reserva para emergências e organizar
-                    o uso do dinheiro. A educação financeira não elimina
-                    problemas como desemprego ou baixos salários, mas ajuda
-                    a tomar decisões mais conscientes dentro das condições
-                    de cada pessoa.
-                </p>
-            </div>
-        </section>
+          <article class="topic-card reveal">
+            <span class="topic-number">02</span>
+            <h3>A dificuldade de conseguir um emprego</h3>
+            <p>
+              Os obstáculos enfrentados por quem procura
+              uma oportunidade no mercado de trabalho.
+            </p>
+            <a href="#tema2" class="topic-link">Ler tema →</a>
+          </article>
 
-        <section id="conclusao" class="section reveal">
-            <div class="conclusion-card">
-                <span class="eyebrow">ENCERRAMENTO</span>
-                <h2>Considerações finais</h2>
-                <h3>O dinheiro é importante, mas as oportunidades também.</h3>
+          <article class="topic-card reveal">
+            <span class="topic-number">03</span>
+            <h3>O esforço, o tempo e a desvalorização do trabalho</h3>
+            <p>
+              A relação entre esforço profissional,
+              remuneração e reconhecimento.
+            </p>
+            <a href="#tema3" class="topic-link">Ler tema →</a>
+          </article>
 
-                <p>
-                    Ganhar dinheiro pode ser difícil devido ao mercado de trabalho,
-                    ao custo de vida e à desigualdade social. A educação financeira
-                    ajuda a tomar decisões melhores, mas também precisamos valorizar
-                    o trabalho e ampliar as oportunidades para construir um futuro melhor.
-                </p>
-            </div>
-        </section>
+          <article class="topic-card reveal">
+            <span class="topic-number">04</span>
+            <h3>O alto custo de vida e as dificuldades financeiras</h3>
+            <p>
+              Como os preços e as despesas afetam
+              o orçamento das famílias.
+            </p>
+            <a href="#tema4" class="topic-link">Ler tema →</a>
+          </article>
 
-        <section id="fontes" class="section reveal">
-            <div class="section-heading">
-                <span class="eyebrow">REFERÊNCIAS</span>
-                <h2>Fontes de pesquisa</h2>
-                <p>Instituições utilizadas como referência para o estudo.</p>
-            </div>
+          <article class="topic-card reveal">
+            <span class="topic-number">05</span>
+            <h3>A desigualdade social e a diferença de oportunidades</h3>
+            <p>
+              Por que nem todas as pessoas começam
+              com as mesmas condições.
+            </p>
+            <a href="#tema5" class="topic-link">Ler tema →</a>
+          </article>
 
-            <div class="sources-list">
-                <a href="https://www.ibge.gov.br/" target="_blank" rel="noopener noreferrer">
-                    <span>IBGE</span>
-                    Instituto Brasileiro de Geografia e Estatística
-                    <span class="external">↗</span>
-                </a>
+          <article class="topic-card reveal">
+            <span class="topic-number">06</span>
+            <h3>Educação financeira, dívidas e planejamento do dinheiro</h3>
+            <p>
+              A importância de organizar os gastos
+              e tomar decisões conscientes.
+            </p>
+            <a href="#tema6" class="topic-link">Ler tema →</a>
+          </article>
 
-                <a href="https://www.dieese.org.br/" target="_blank" rel="noopener noreferrer">
-                    <span>DIEESE</span>
-                    Departamento Intersindical de Estatística e Estudos Socioeconômicos
-                    <span class="external">↗</span>
-                </a>
+        </div>
+      </div>
+    </section>
 
-                <a href="https://www.bcb.gov.br/cidadaniafinanceira" target="_blank" rel="noopener noreferrer">
-                    <span>Banco Central</span>
-                    Educação Financeira
-                    <span class="external">↗</span>
-                </a>
+    <!-- TEMA 1 -->
+    <section class="section content-section" id="tema1">
+      <div class="container">
 
-                <a href="https://www.gov.br/trabalho-e-emprego/pt-br" target="_blank" rel="noopener noreferrer">
-                    <span>Ministério do Trabalho</span>
-                    Ministério do Trabalho e Emprego
-                    <span class="external">↗</span>
-                </a>
-            </div>
-        </section>
-    </main>
+        <div class="section-heading reveal">
+          <span class="section-label">TEMA 01</span>
+          <h2>A importância do dinheiro na sociedade</h2>
+        </div>
 
-    <footer class="footer">
-        <p>Trabalho desenvolvido por Hector, Estêvão, Carlos, Nicolas, Brayan, João Vitor e Ryan.</p>
-        <p>Educação Financeira · 2026</p>
-        <a href="#inicio">Voltar ao início ↑</a>
-    </footer>
+        <article class="theme-section reveal">
+          <h3>O dinheiro no cotidiano</h3>
 
-    <button id="backToTop" aria-label="Voltar ao topo" title="Voltar ao topo">
-        ↑
-    </button>
+          <p>
+            O dinheiro possui um papel fundamental na sociedade,
+            pois permite a compra e a venda de produtos e serviços.
+            Por meio dele, as pessoas conseguem adquirir alimentos,
+            roupas, medicamentos e outros itens necessários para
+            viver.
+          </p>
+
+          <p>
+            Além das necessidades básicas, o dinheiro também
+            proporciona acesso à educação, ao transporte, ao lazer
+            e a diferentes oportunidades. Por isso, ter uma renda
+            é importante para garantir mais segurança e qualidade
+            de vida.
+          </p>
+
+          <p>
+            Entretanto, o dinheiro não representa apenas riqueza.
+            Ele também está relacionado à sobrevivência, à
+            independência e à possibilidade de construir um futuro
+            com mais estabilidade.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TEMA 2 -->
+    <section class="section" id="tema2">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-label">TEMA 02</span>
+          <h2>A dificuldade de conseguir um emprego</h2>
+        </div>
+
+        <article class="theme-section reveal">
+          <h3>Os obstáculos do mercado de trabalho</h3>
+
+          <p>
+            Conseguir um emprego pode ser um grande desafio.
+            Muitas empresas exigem experiência profissional,
+            formação e conhecimentos específicos, o que
+            dificulta a entrada de jovens e pessoas que estão
+            começando sua trajetória profissional.
+          </p>
+
+          <p>
+            Outro problema é a quantidade limitada de vagas
+            disponíveis em determinadas áreas. Quando muitas
+            pessoas procuram trabalho ao mesmo tempo, a
+            concorrência aumenta e conseguir uma oportunidade
+            se torna ainda mais difícil.
+          </p>
+
+          <p>
+            O desemprego também pode trazer consequências para
+            toda a família, pois reduz a renda e dificulta o
+            pagamento de despesas essenciais. Por isso, ampliar
+            o acesso à qualificação profissional e às oportunidades
+            de trabalho é tão importante.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TEMA 3 -->
+    <section class="section content-section" id="tema3">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-label">TEMA 03</span>
+          <h2>O esforço, o tempo e a desvalorização do trabalho</h2>
+        </div>
+
+        <article class="theme-section reveal">
+          <h3>Trabalhar muito nem sempre significa ganhar muito</h3>
+
+          <p>
+            O trabalho exige tempo, dedicação, responsabilidade
+            e esforço. Muitas pessoas passam grande parte do dia
+            trabalhando para conseguir sustentar suas famílias
+            e pagar as despesas do mês.
+          </p>
+
+          <p>
+            Porém, nem sempre a remuneração recebida corresponde
+            ao esforço realizado. Existem profissionais que
+            trabalham em condições difíceis e recebem salários
+            baixos, mesmo desempenhando funções essenciais
+            para a sociedade.
+          </p>
+
+          <p>
+            A valorização do trabalhador é fundamental para
+            garantir condições dignas de vida. Salários justos,
+            respeito aos direitos trabalhistas e ambientes
+            seguros são aspectos importantes para uma sociedade
+            mais equilibrada.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TEMA 4 -->
+    <section class="section" id="tema4">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-label">TEMA 04</span>
+          <h2>O alto custo de vida e as dificuldades financeiras</h2>
+        </div>
+
+        <article class="theme-section reveal">
+          <h3>Quando o dinheiro não acompanha as despesas</h3>
+
+          <p>
+            O custo de vida representa o valor necessário para
+            manter as despesas do cotidiano, como alimentação,
+            moradia, energia elétrica, água, transporte e saúde.
+          </p>
+
+          <p>
+            Quando os preços aumentam e a renda permanece igual,
+            as famílias perdem poder de compra. Isso significa
+            que o mesmo dinheiro passa a comprar menos produtos
+            e serviços do que antes.
+          </p>
+
+          <p>
+            Essa situação pode obrigar as pessoas a reduzir
+            gastos, deixar de comprar determinados produtos
+            ou até recorrer a empréstimos para conseguir
+            pagar suas contas.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TEMA 5 -->
+    <section class="section content-section" id="tema5">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-label">TEMA 05</span>
+          <h2>A desigualdade social e a diferença de oportunidades</h2>
+        </div>
+
+        <article class="theme-section reveal">
+          <h3>Nem todos começam do mesmo lugar</h3>
+
+          <p>
+            A desigualdade social acontece quando existem
+            diferenças significativas no acesso à renda,
+            à educação, à saúde, à moradia e às oportunidades.
+          </p>
+
+          <p>
+            Algumas pessoas crescem em ambientes com acesso
+            a boas escolas, recursos e apoio familiar. Outras
+            enfrentam dificuldades desde cedo, o que pode
+            limitar suas possibilidades de estudo e trabalho.
+          </p>
+
+          <p>
+            Essas diferenças influenciam diretamente as
+            oportunidades de cada indivíduo. Combater a
+            desigualdade exige investimentos em educação,
+            serviços públicos de qualidade e condições mais
+            justas para todos.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TEMA 6 -->
+    <section class="section" id="tema6">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-label">TEMA 06</span>
+          <h2>Educação financeira, dívidas e planejamento do dinheiro</h2>
+        </div>
+
+        <article class="theme-section reveal">
+          <h3>A importância de saber administrar o dinheiro</h3>
+
+          <p>
+            A educação financeira ensina as pessoas a
+            compreender melhor sua renda, organizar despesas,
+            planejar compras e tomar decisões responsáveis.
+            Ela é importante em todas as fases da vida.
+          </p>
+
+          <p>
+            Quando alguém não controla seus gastos, pode acabar
+            acumulando dívidas e comprometendo boa parte de sua
+            renda. O uso excessivo do crédito e a falta de
+            planejamento podem tornar a situação ainda mais
+            complicada.
+          </p>
+
+          <p>
+            Criar um orçamento, acompanhar os gastos, evitar
+            compras por impulso e reservar dinheiro sempre
+            que possível são atitudes que ajudam a construir
+            uma vida financeira mais organizada.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONCLUSÃO -->
+    <section class="section" id="conclusao">
+      <div class="container">
+
+        <div class="conclusion-card reveal">
+
+          <span class="section-label">CONCLUSÃO</span>
+
+          <h2>
+            O dinheiro é importante,
+            <span>mas as oportunidades também.</span>
+          </h2>
+
+          <p>
+            Ganhar dinheiro pode ser difícil devido ao mercado
+            de trabalho, ao custo de vida e à desigualdade social.
+            A educação financeira ajuda a tomar decisões melhores,
+            mas também precisamos valorizar o trabalho e ampliar
+            as oportunidades para construir um futuro melhor.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FONTES -->
+    <section class="section content-section" id="fontes">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-label">REFERÊNCIAS</span>
+
+          <h2>Fontes de pesquisa</h2>
+
+          <p>
+            Instituições utilizadas como referência para
+            compreender os assuntos apresentados neste trabalho.
+          </p>
+        </div>
+
+        <ul class="sources-list reveal">
+
+          <li>
+            <a href="https://www.ibge.gov.br/"
+               target="_blank"
+               rel="noopener noreferrer">
+              IBGE — Instituto Brasileiro de Geografia e Estatística ↗
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.dieese.org.br/"
+               target="_blank"
+               rel="noopener noreferrer">
+              DIEESE — Departamento Intersindical de Estatística
+              e Estudos Socioeconômicos ↗
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.bcb.gov.br/"
+               target="_blank"
+               rel="noopener noreferrer">
+              Banco Central do Brasil ↗
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.gov.br/trabalho-e-emprego/pt-br"
+               target="_blank"
+               rel="noopener noreferrer">
+              Ministério do Trabalho e Emprego ↗
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Educação Financeira © 2026 —
+        Projeto escolar desenvolvido em equipe.
+      </p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button
+    id="backToTop"
+    type="button"
+    aria-label="Voltar ao topo">
+    ↑
+  </button>
 
 </body>
 </html>
