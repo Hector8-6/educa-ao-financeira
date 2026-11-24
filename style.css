@@ -111,6 +111,7 @@ img {
   padding: 8px 13px;
   font-size: 21px;
   cursor: pointer;
+  margin-left: auto;
 }
 
 /* CAPA */
@@ -235,7 +236,7 @@ img {
   transform: translateY(-4px);
 }
 
-/* CARTÕES E TEMAS */
+/* TEMAS E CARTÕES */
 
 .topics-grid,
 .cards-grid,
@@ -282,7 +283,27 @@ img {
   font-size: 14px;
 }
 
+/* IMAGENS DOS TEMAS */
+
+.topic-card img,
+.content-card img,
+.theme-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 9px;
+  margin-bottom: 18px;
+}
+
+.theme-image {
+  height: 300px;
+}
+
 /* CONTEÚDO */
+
+.content-section {
+  background: var(--surface);
+}
 
 .theme-section {
   padding: 35px;
@@ -335,6 +356,10 @@ img {
   font-family: Georgia,serif;
   font-size: clamp(26px,4vw,38px);
   margin-bottom: 15px;
+}
+
+.conclusion-card h2 span {
+  color: var(--green);
 }
 
 .conclusion-card p {
@@ -441,10 +466,14 @@ img {
 
   .navbar {
     min-height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .menu-button {
     display: block;
+    margin-left: auto;
   }
 
   .nav-links {
@@ -492,6 +521,10 @@ img {
   .theme-section,
   .conclusion-card {
     padding: 24px;
+  }
+
+  .theme-image {
+    height: 210px;
   }
 }
 
