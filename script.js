@@ -1,74 +1,89 @@
-6
-// ========================================
-// EDUCAÇÃO FINANCEIRA
-// Interatividade do site
-// ========================================
 
-// MENU MOBILE
-const menuButton = document.getElementById("menuButton");
-const navLinks = document.getElementById("navLinks");
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.querySelector(".menu-button");
+  const navLinks = document.querySelector(".nav-links");
+  const backToTop = document.querySelector("#backToTop");
 
-if (menuButton && navLinks) {
-  menuButton.addEventListener("click", () => {
-    const opened = navLinks.classList.toggle("open");
+  // MENU MOBILE
+  if (menuButton && navLinks) {
+    menuButton.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
 
-    menuButton.setAttribute("aria-expanded", opened);
-    menuButton.textContent = opened ? "✕" : "☰";
-  });
-
-  // Fecha o menu ao selecionar uma seção
-  navLinks.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
-      menuButton.textContent = "☰";
+      const aberto = navLinks.classList.contains("open");
+      menuButton.setAttribute("aria-expanded", String(aberto));
     });
-  });
-}
 
-// BOTÃO VOLTAR AO TOPO
-const backTop = document.getElementById("backTop");
-
-if (backTop) {
-  window.addEventListener("scroll", () => {
-    backTop.classList.toggle("show", window.scrollY > 400);
-  });
-
-  backTop.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
     });
-  });
-}
+  }
 
-// ANIMAÇÕES AO ROLAR A PÁGINA
-const revealElements = document.querySelectorAll(".reveal");
+  // BOTÃO VOLTAR AO TOPO
+  function controlarBotaoTopo() {
+    if (backToTop) {
+      backToTop.classList.toggle("show", window.scrollY > 400);
+    }
+  }
 
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
+  window.addEventListener("scroll", controlarBotaoTopo);
+  controlarBotaoTopo();
+
+  if (backToTop) {
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     });
-  }, {
-    threshold: 0.12
-  });
+  }
 
-  revealElements.forEach(element => {
-    observer.observe(element);
-  });
-} else {
-  revealElements.forEach(element => {
-    element.classList.add("visible");
-  });
-}
+  // ANIMAÇÃO AO ROLAR A PÁGINA
+  const elementos = document.querySelectorAll(".reveal");
 
-// ANO AUTOMÁTICO NO RODAPÉ
-const copyright = document.querySelector(".copyright");
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12
+    });
 
-if (copyright) {
-  copyright.textContent = `© ${new Date().getFullYear()} · Projeto educacional`;
-}
+    elementos.forEach(elemento => observer.observe(elemento));
+  } else {
+    elementos.forEach(elemento => {
+      elemento.classList.add("visible");
+    });
+  }
+
+  // DESTAQUE DO LINK DA SEÇÃO ATUAL
+  const secoes = document.querySelectorAll("main section[id]");
+  const links = document.querySelectorAll(".nav-links a");
+
+  if ("IntersectionObserver" in window) {
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          links.forEach(link => {
+            const destino = link.getAttribute("href");
+
+            link.classList.toggle(
+              "active",
+              destino === `#${entry.target.id}`
+            );
+          });
+        }
+      });
+    }, {
+      rootMargin: "-30% 0px -60% 0px"
+    });
+
+    secoes.forEach(secao => sectionObserver.observe(secao));
+  }
+});
